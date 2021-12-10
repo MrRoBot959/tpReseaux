@@ -1,0 +1,8 @@
+ifconfig eth0 192.168.1.253/26 up
+ifconfig eth1 192.168.1.190/26 up
+
+
+route add -net 192.168.1.0 netmask 255.255.255.192 gw r4e1
+route add -net 192.168.1.64 netmask 255.255.255.192 gw r2e1
+route add -net 19.14.16.0 netmask 255.255.240.0 gw r2e1 
+
